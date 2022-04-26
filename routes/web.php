@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +23,4 @@ Route::get('/users', function () {
     return view('users');
 })->name('users');
 
-Route::post('/user/register', function () {
-    return dd(Request::all());
-})->name('reg_form');
+Route::post('/user/register', 'App\Http\Controllers\UsersController@createUser')->name('reg_form');
