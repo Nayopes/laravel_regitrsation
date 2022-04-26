@@ -8,7 +8,7 @@ Home
 
     <h1>Home Page</h1>
 
-    <form class="registrationForm" action="/user/register" method="post">
+    <form class="registrationForm" action="{{route('reg_form')}}" method="post">
         @csrf
         <input type="text" name="name" placeholder="First Name">
         <input type="text" name="name" placeholder="Last Name">

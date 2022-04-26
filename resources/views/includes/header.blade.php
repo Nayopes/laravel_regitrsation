@@ -1,10 +1,10 @@
 <header>
     <ul>
         <li>
-            <a href="/">Home</a>
+            <a href="{{route('home')}}">Home</a>
         </li>
         <li>
-            <a href="/users">Users</a>
+            <a href="{{route('users')}}">Users</a>
         </li>
     </ul>
 </header>

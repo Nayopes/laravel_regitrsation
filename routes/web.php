@@ -15,12 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/users', function () {
     return view('users');
-});
+})->name('users');
 
 Route::post('/user/register', function () {
-    return 'ok';
-});
+    return dd(Request::all());
+})->name('reg_form');
