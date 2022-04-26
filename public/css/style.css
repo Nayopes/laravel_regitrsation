@@ -1,0 +1,15 @@
+
+.main{
+    max-width: 1920px;
+    padding: 20px;
+}
+.registrationForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+}
+.registrationForm input{
+    margin: 10px 0;
+    padding: 6px;
+}
