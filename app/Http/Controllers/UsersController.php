@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\UsersRequest;
 
 class UsersController extends Controller {
 
-    public function createUser (Request $response) {
-        dd($response->input('email'));
+    public function createUser (UsersRequest $response) {
+
     }
 }
