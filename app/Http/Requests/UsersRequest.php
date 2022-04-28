@@ -26,7 +26,7 @@ class UsersRequest extends FormRequest
         return [
             'firstName' => 'required|min:3',
             'lastName' => 'required|min:3',
-            'birth' => 'required|date|date_format:m/d/Y|before_or_equal:'.$now,
+            'birthDate' => 'required|date|date_format:m/d/Y|before_or_equal:'.$now,
             'email' => 'required|email:rfc',
             'phone' => 'required|regex:/^(\(?\d{3}\)?[\- ]?)?[\s\]?[0-9]{3}?[\d\- ]?[0-9]{4}$/'
 
@@ -36,7 +36,7 @@ class UsersRequest extends FormRequest
         return [
             'firstName' => 'First Name',
             'lastName' => 'Last Name',
-            'birth' => 'Date Of Birth',
+            'birthDate' => 'Date Of Birth',
             'email' => 'Email',
             'phone' => 'Phone Number'
         ];

@@ -25,8 +25,8 @@ Home
         <label for="lastName">Last Name</label>
         <input type="text" name="lastName" placeholder="Last Name" required>
 
-        <label for="birth">Date Of Birth</label>
-        <input type="text" name="birth" placeholder="mm/dd/yyyy" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" title="Format is mm/dd/yyyy" required>
+        <label for="birthDate">Date Of Birth</label>
+        <input type="text" name="birthDate" placeholder="mm/dd/yyyy" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" title="Format is mm/dd/yyyy" required>
 
         <label for="email">Email</label>
         <input type="email" name="email" placeholder="exaimple@example.com" required>
