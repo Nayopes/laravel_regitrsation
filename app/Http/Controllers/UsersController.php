@@ -18,7 +18,8 @@ class UsersController extends Controller {
         $user->email = $response->input('email');
         $user->phone = $response->input('phone');
         $user->save();
-        return redirect()->route('home');
+
+        return redirect()->route('users')->with('success', 'The user is added successfully!');
 
     }
 }

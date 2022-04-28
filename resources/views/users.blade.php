@@ -7,4 +7,7 @@ Users
 @section('content')
     <h1>Users Page</h1>
 
+    <p>
+        @include('includes.messages')
+    </p>
 @endsection
