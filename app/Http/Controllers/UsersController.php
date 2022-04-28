@@ -22,4 +22,8 @@ class UsersController extends Controller {
         return redirect()->route('users')->with('success', 'The user is added successfully!');
 
     }
+
+    public function allUsers () {
+        return view('users', ['data' => Users::all()]);
+    }
 }
